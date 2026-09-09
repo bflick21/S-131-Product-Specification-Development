@@ -42,7 +42,7 @@
 
   <XC:datasetDiscoveryMetadata>
     <XC:S100_DatasetDiscoveryMetadata>
-      <XC:fileName>file:/S-131/00AA/DATASET_FILES/13100AA_SAMPLE_CAHAL.GML</XC:fileName>
+      <XC:fileName>file:/S-131/DATASET_FILES/00AA/13100AA_SAMPLE_CAHAL.GML</XC:fileName>
       <XC:description><gco:CharacterString>Edition 3 of sample dataset for S-131 Edition 1.0.0.</gco:CharacterString></XC:description>
       <XC:datasetID>urn:mrn:iho:prod:s131:1:0:0:00aa:sample_cahal:2:0</XC:datasetID>
       <XC:compressionFlag>false</XC:compressionFlag>

@@ -31,6 +31,7 @@
     <S131:members>
         <S131:Authority gml:id="AA.CAHAL.Authority.00">
             <S131:featureName>
+                <S131:language>eng</S131:language>
                 <S131:name>Halifax Port Authority</S131:name>
             </S131:featureName>
             <S131:categoryOfAuthority code="4">Port</S131:categoryOfAuthority>
@@ -39,6 +40,7 @@
         
         <S131:Authority gml:id="AA.CAHAL.Authority.01">
             <S131:featureName>
+                <S131:language>eng</S131:language>
                 <S131:name>PSA Halifax</S131:name>
             </S131:featureName>
             <S131:categoryOfAuthority code="10">Private Company</S131:categoryOfAuthority>
@@ -47,6 +49,7 @@
         
         <S131:Authority gml:id="AA.CAHAL.Authority.02">
             <S131:featureName>
+                <S131:language>eng</S131:language>
                 <S131:name>CERES Halifax Inc.</S131:name>
             </S131:featureName>
             <S131:categoryOfAuthority code="10">Private Company</S131:categoryOfAuthority>
@@ -54,8 +57,7 @@
                 <S131:information>
                     <S131:text>Acquired by PSA Halifax; contact details may by outdated</S131:text>
                 </S131:information>
-                <S131:source>https://www.ship-technology.com/news/singapore-psa-ceres-halifax-canada/</S131:source>
-                <S131:reportedDate><S100:date>2022-04-04</S100:date></S131:reportedDate>
+
             </S131:textContent>
             <S131:theContactDetails xlink:href="#AA.CAHAL.ContactDetails.02"/>
         </S131:Authority>
@@ -83,7 +85,7 @@
                 <S131:postalCode>B3J 2P6</S131:postalCode>
             </S131:contactAddress>
             <S131:onlineResource>
-                <S131:onlineResourceLinkageURL>www.portofhalifax.ca</S131:onlineResourceLinkageURL>
+                <S131:linkage>www.portofhalifax.ca</S131:linkage>
             </S131:onlineResource>
             <S131:telecommunications>
                 <S131:telecommunicationIdentifier>(902) 426-8222</S131:telecommunicationIdentifier>
@@ -106,7 +108,7 @@
                 <S131:postalCode>B3J 2X1</S131:postalCode>
             </S131:contactAddress>
             <S131:onlineResource>
-                <S131:onlineResourceLinkageURL>www.psahalifax.com</S131:onlineResourceLinkageURL>
+                <S131:linkage>www.psahalifax.com</S131:linkage>
             </S131:onlineResource>
             <S131:telecommunications>
                 <S131:telecommunicationIdentifier>(902) 421-1778</S131:telecommunicationIdentifier>
@@ -132,7 +134,7 @@
                 <S131:text>Acquired by PSA Halifax in April 2022; contact details may by outdated</S131:text>
             </S131:information>
             <S131:onlineResource>
-                <S131:onlineResourceLinkageURL>www.psahalifax.com</S131:onlineResourceLinkageURL>
+                <S131:linkage>www.psahalifax.com</S131:linkage>
             </S131:onlineResource>
             <S131:telecommunications>
                 <S131:telecommunicationIdentifier>(902) 453-4590</S131:telecommunicationIdentifier>
@@ -145,14 +147,6 @@
             </S131:telecommunications>
             <S131:theAuthority xlink:href="#AA.CAHAL.Authority.02"/>
         </S131:ContactDetails>
-        
-        <S131:Restrictions gml:id="AA.Restrictions.01">
-            <S131:textContent>
-                <S131:information>
-                    <S131:text>Bridge height 49 m at high tide with 1.35 m minimum air gap clearance.</S131:text>
-                </S131:information>
-            </S131:textContent>
-        </S131:Restrictions>
         
         <S131:Regulations gml:id="AA.CAHAL.Regulations.00">
             <S131:categoryOfAuthority code="4">Port</S131:categoryOfAuthority>
@@ -213,9 +207,11 @@
                 <S131:fileReference>file:/13100AA_TUGS.HTM</S131:fileReference>
                 <S131:headline>TUG MATRIX</S131:headline>
               </S131:information>
-              <S131:source>HPA Port Information Guide</S131:source>
-              <S131:sourceType code="2">Official Publication</S131:sourceType>
-              <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+              <S131:sourceIndication>
+                  <S131:source>HPA Port Information Guide</S131:source>
+                  <S131:sourceType code="2">Official Publication</S131:sourceType>
+                  <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+              </S131:sourceIndication>
             </S131:textContent>
             <S131:isApplicableTo xlink:href="#AA.CAHAL.Applicability.11.4_1">
               <S131:InclusionType>
@@ -252,12 +248,12 @@
         </S131:ServiceHours>
       
         <S131:Applicability gml:id="AA.CAHAL.Applicability.01">
-            <S131:vesselsMeasurements>
+            <S131:vesselMeasurementsSpecification>
                 <S131:comparisonOperator code="1">Greater Than</S131:comparisonOperator>
                 <S131:vesselsCharacteristics code="4">Draught</S131:vesselsCharacteristics>
                 <S131:vesselsCharacteristicsValue>13.8</S131:vesselsCharacteristicsValue>
                 <S131:vesselsCharacteristicsUnit code="1">Metres</S131:vesselsCharacteristicsUnit>
-            </S131:vesselsMeasurements>
+            </S131:vesselMeasurementsSpecification>
             <S131:theApplicableRxN xlink:href="#AA.CAHAL.Regulations.01">
                 <S131:InclusionType>
                     <S131:membership code="1">Included</S131:membership>
@@ -266,12 +262,12 @@
         </S131:Applicability>
         
         <S131:Applicability gml:id="AA.CAHAL.Applicability.02">
-            <S131:vesselsMeasurements>
+            <S131:vesselMeasurementsSpecification>
                 <S131:comparisonOperator code="1">Greater Than</S131:comparisonOperator>
                 <S131:vesselsCharacteristics code="4">Draught</S131:vesselsCharacteristics>
                 <S131:vesselsCharacteristicsValue>17.7</S131:vesselsCharacteristicsValue>
                 <S131:vesselsCharacteristicsUnit code="1">Metres</S131:vesselsCharacteristicsUnit>
-            </S131:vesselsMeasurements>
+            </S131:vesselMeasurementsSpecification>
             <S131:theApplicableRxN xlink:href="#AA.CAHAL.Regulations.02">
                 <S131:InclusionType>
                     <S131:membership code="1">Included</S131:membership>
@@ -280,12 +276,12 @@
         </S131:Applicability>
       
         <S131:Applicability gml:id="AA.CAHAL.Applicability.11.4_1">
-          <S131:vesselsMeasurements>
+          <S131:vesselMeasurementsSpecification>
             <S131:comparisonOperator code="1">Greater Than</S131:comparisonOperator>
             <S131:vesselsCharacteristics code="1">Length Overall</S131:vesselsCharacteristics>
             <S131:vesselsCharacteristicsValue>150</S131:vesselsCharacteristicsValue>
             <S131:vesselsCharacteristicsUnit code="1">Metres</S131:vesselsCharacteristicsUnit>
-          </S131:vesselsMeasurements>
+          </S131:vesselMeasurementsSpecification>
           <S131:theApplicableRxN xlink:href="#AA.CAHAL.Regulations.11.4_1">
             <S131:InclusionType>
               <S131:membership code="1">Included</S131:membership>
@@ -298,12 +294,12 @@
           <S131:headline>Special circumstances</S131:headline>
           <S131:text>Under circumstances and conditions relating to environmental protection, the safety of navigation and/or the safety of HPA leased and/or operated facilities or infrastructure, the HPA may require a vessel to secure the services of a tug(s).</S131:text>
         </S131:information>
-        <S131:vesselsMeasurements>
+        <S131:vesselMeasurementsSpecification>
           <S131:comparisonOperator code="1">Greater Than</S131:comparisonOperator>
           <S131:vesselsCharacteristics code="1">Length Overall</S131:vesselsCharacteristics>
           <S131:vesselsCharacteristicsValue>150</S131:vesselsCharacteristicsValue>
           <S131:vesselsCharacteristicsUnit code="1">Metres</S131:vesselsCharacteristicsUnit>
-        </S131:vesselsMeasurements>
+        </S131:vesselMeasurementsSpecification>
         <S131:theApplicableRxN xlink:href="#AA.CAHAL.Regulations.11.4_1">
           <S131:InclusionType>
             <S131:membership code="2">Excluded</S131:membership>
@@ -321,8 +317,10 @@
         <S131:information>
           <S131:text>Vessels at anchor in these areas are advised of their unsuitability by MCTS when onshore winds are (or forecast to be) 25 knots or greater in any direction from the northeast through to the southwest. Whether or not the vessel heeds this advice will remain the vessel's responsibility.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Recommendations>
     
@@ -337,8 +335,10 @@
         <S131:information>
           <S131:text>MCTS will contact vessels during periods of sustained onshore (NE to SW) winds of 25 knots or higher. Vessels in transit will be informed via Waterway Information if the forecast winds are expected to reach a sustained strength of 25 knots during their expected time at anchor.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Recommendations>
     
@@ -353,8 +353,10 @@
         <S131:information>
           <S131:text>Vessels contacted about the unsuitability of Anchorages A and B during sustained onshore winds will be requested for their intentions and the decision to proceed, to remain or depart the anchorages remains with the vessel.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Recommendations>
     
@@ -369,13 +371,17 @@
         <S131:information>
           <S131:text>MCTS will monitor vessels at anchor by radar for early signs of dragging anchor and inform vessels of any detected movement. All vessels are required to maintain a listening watch at all times on channel 14 while at  anchor off Chebucto Head and on channel 12 if anchored in the Inner Harbour.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     
     <S131:Applicability gml:id="AA.CAHAL.Applicability.7.14.1">
-      <S131:source>HPA Port Guide; CA476009</S131:source>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Guide; CA476009</S131:source>
+      </S131:sourceIndication>
       <S131:categoryOfVessel code="3">Tanker</S131:categoryOfVessel>
       <S131:logicalConnectives code="1">Logical Conjunction</S131:logicalConnectives>
       <S131:information>
@@ -387,7 +393,9 @@
     </S131:Applicability>
     
     <S131:Applicability gml:id="AA.CAHAL.Applicability.7.14.2">
-      <S131:source>HPA Port Guide; CA476009</S131:source>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Guide; CA476009</S131:source>
+      </S131:sourceIndication>
       <S131:logicalConnectives code="1">Logical Conjunction</S131:logicalConnectives>
       <S131:information>
         <S131:text>Tonnage limit is SDWT (summer deadweight tons)</S131:text>
@@ -395,12 +403,12 @@
       <S131:information>
         <S131:text>With destination Halifax</S131:text>
       </S131:information>
-      <S131:vesselsMeasurements>
+      <S131:vesselMeasurementsSpecification>
         <S131:comparisonOperator code="1">Greater Than</S131:comparisonOperator>
         <S131:vesselsCharacteristics code="9">Deadweight Tonnage</S131:vesselsCharacteristics>
         <S131:vesselsCharacteristicsValue>40000</S131:vesselsCharacteristicsValue>
         <S131:vesselsCharacteristicsUnit code="3">Metric Ton</S131:vesselsCharacteristicsUnit>
-      </S131:vesselsMeasurements>
+      </S131:vesselMeasurementsSpecification>
     </S131:Applicability>
     
     <S131:NauticalInformation gml:id="AA.CAHAL.NauticalInformation.14.8.01">
@@ -414,8 +422,10 @@
         <S131:information>
           <S131:text>When marine weather warnings are received from Environment Canada, each vessel at anchor will be contacted in advance of the subsequent Safety or “Securite” broadcast. The broadcast will also include the current wind  information as monitored at Chebucto Head and at Shannon Hill (Bedford Basin).</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:NauticalInformation>
     
@@ -430,8 +440,10 @@
         <S131:information>
           <S131:fileReference>file:/13100AA_CAHALPG_14_8_02.TXT</S131:fileReference>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:NauticalInformation>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.01">
@@ -446,8 +458,10 @@
         <S131:information>
           <S131:text>A twenty-four (24) hour and twelve (12) hour notice are required for vessels arriving at the pilot station with a confirmation of three (3) hours before arrival at the station.Detailed information about vessel arrivals may be found on the Atlantic Pilotage Authority website www.atlanticpilotage.com</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.02">
@@ -462,8 +476,10 @@
         <S131:information>
           <S131:text>Twelve (12) hour notice required for departure or move with one and a half (1.5) hour confirmation based upon the original order time. The departure/move time may be altered three (3) times but must be firmed on the third change. All vessels transiting Halifax Harbour must declare their air draft.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.03">
@@ -478,12 +494,15 @@
         <S131:information>
           <S131:text>If the vessel has not departed/moved within one (1) hour of the time for which the pilot is ordered, the pilot will report to the dispatch office. At this point, the pilot may leave the vessel and/or be assigned to another vessel. Another pilot will be dispatched as soon as one becomes available.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:ContactDetails gml:id="AA.CAHAL.ContactDetails.11.3.10">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Atlantic Pilotage Authority (APA) Pilot Dispatch</S131:name>
       </S131:featureName>
       <S131:contactInstructions>Indicate type of call at outset, such as “a new order” or “a change in an existing order”.</S131:contactInstructions>
@@ -512,11 +531,11 @@
         <S131:text>Orders for pilots can only be accepted from: (1) Ships’ Masters; (2) Ships’ Agents or their accredited representatives; (3) Ship Owners</S131:text>
       </S131:information>
       <S131:onlineResource>
-        <S131:onlineResourceLinkageURL>https://pilots.atlanticpilotage.com/Account/</S131:onlineResourceLinkageURL>
+        <S131:linkage>https://pilots.atlanticpilotage.com/Account/</S131:linkage>
         <S131:onlineResourceDescription>Web orders for pilots</S131:onlineResourceDescription>
       </S131:onlineResource>
       <S131:onlineResource>
-        <S131:onlineResourceLinkageURL>http://www.atlanticpilotage.com/wp-content/uploads/2017/08/APA-Pilot-Order-Form.pdf</S131:onlineResourceLinkageURL>
+        <S131:linkage>http://www.atlanticpilotage.com/wp-content/uploads/2017/08/APA-Pilot-Order-Form.pdf</S131:linkage>
         <S131:nameOfResource>APA - Pilot Order Form</S131:nameOfResource>
       </S131:onlineResource>
       <S131:telecommunications>
@@ -558,8 +577,10 @@
         <S131:information>
           <S131:text>The Pilotage Act has defined the Atlantic Pilotage Authority’s area of operation as all the Canadian waters in and around the provinces of New Brunswick, Prince Edward Island, Nova Scotia, and Newfoundland and Labrador. Please refer to https://www.atlanticpilotage.com/operations/compulsory-areas/ for more information on Compulsory Areas in Atlantic Canada.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.11.2">
@@ -573,11 +594,13 @@
       <S131:textContent>
         <S131:categoryOfText code="2">Extract</S131:categoryOfText>
         <S131:onlineResource>
-          <S131:onlineResourceLinkageURL>https://www.atlanticpilotage.com/operations/compulsory-areas/</S131:onlineResourceLinkageURL>
+          <S131:linkage>https://www.atlanticpilotage.com/operations/compulsory-areas/</S131:linkage>
           <S131:onlineResourceDescription>Compulsory Pilotage Areas in Atlantic Canada</S131:onlineResourceDescription>
         </S131:onlineResource>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.12.1">
@@ -593,8 +616,10 @@
           <S131:headline>Paragraph 1 - Direction to vessel</S131:headline>
           <S131:text>If a vessel requiring a pilot attempts to enter compulsory pilotage waters without a pilot onboard and/or refuses to take a pilot, MCTS shall immediately inform the APA and HPA Security. The vessel shall be directed to a safe holding area and/or anchorage area outside compulsory pilotage waters.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.12.2">
@@ -610,8 +635,10 @@
           <S131:headline>Paragraph 2 - Advice</S131:headline>
           <S131:text>The services of a licensed pilot are required in order for your vessel to enter and/or proceed within the compulsory pilotage area of the Port of Halifax. Until further notice, your vessel is not permitted to proceed until the services of a pilot are secured and the pilot embarks.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.12.3">
@@ -627,8 +654,10 @@
           <S131:headline>Paragraph 2 - Availability of pilot</S131:headline>
           <S131:text>In order to facilitate traffic regulating, the APA dispatch office shall advise Halifax MCTS as soon as possible when a pilot for the diverted vessel will be available to support the vessel.</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
     <S131:Regulations gml:id="AA.CAHAL.Regulations.11.3.13">
@@ -643,12 +672,13 @@
         <S131:information>
           <S131:text>Any vessel that has a deep draft of greater than (&gt;) 14.8 metres, + height of tide (to maintain 15% UKC in the Approaches)</S131:text>
         </S131:information>
-        <S131:source>Port Information Guide</S131:source>
-        <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>Port Information Guide</S131:source>
+            <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
     </S131:Regulations>
       <S131:AvailablePortServices gml:id="AA.CAHAL.AvailablePortServices.0">
-        <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
         <S131:repairService code="2">Diver Service</S131:repairService>
         <S131:repairService code="4">Engine Repair</S131:repairService>
         <S131:repairService code="6">Hull Repair</S131:repairService>
@@ -688,6 +718,9 @@
         <S131:supplyService code="8">Provisions</S131:supplyService>
         <S131:supplyService code="9">Chandler</S131:supplyService>
         <S131:supplyService code="10">Mechanics Workshop</S131:supplyService>
+        <S131:sourceIndication>
+            <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+        </S131:sourceIndication>
         <S131:textContent>
           <S131:categoryOfText code="1">Abstract or Summary</S131:categoryOfText>
           <S131:information>
@@ -773,9 +806,9 @@
                 <S131:uncertaintyFixed>0.1</S131:uncertaintyFixed>
             </S131:horizontalPositionUncertainty>
             <S131:orientationUncertainty>1.0</S131:orientationUncertainty>
-            <S131:surveyDateRange>
+            <!-- <S131:surveyDateRange>
                 <S131:dateEnd><S100:gYear>2022</S100:gYear></S131:dateEnd>
-            </S131:surveyDateRange>
+            </S131:surveyDateRange> -->
             <S131:geometry>
                 <S100:surfaceProperty><S100:Surface gml:id="AA.QualityOfNonBathymetricData.CA576003.0.S" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
                     <gml:patches>
@@ -792,7 +825,9 @@
         </S131:QualityOfNonBathymetricData>
         
             <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.0">
-      <S131:source>CA576003</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Small craft anchorage</S131:text>
@@ -813,7 +848,9 @@
     </S131:AnchorageArea>
     
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.1">
-      <S131:source>CA576003</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Small craft anchorage</S131:text>
@@ -833,7 +870,9 @@
       </S131:geometry>
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.2">
-      <S131:source>CA576003</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Small craft anchorage</S131:text>
@@ -853,7 +892,9 @@
       </S131:geometry>
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.3">
-      <S131:source>CA576001</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Small craft anchorage</S131:text>
@@ -875,9 +916,12 @@
     
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.4">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>B</S131:name>
       </S131:featureName>
-      <S131:source>CA476009; Port Guide</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA476009; Port Guide</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:language>eng</S131:language>
@@ -888,7 +932,7 @@
           <S131:text>Des mouillages temporaires sont disponibles au large de Chebucto Head et sont indiqués comme Anchorage Area A et Anchorage Area B. Les zones de mouiliage A et B ne devraient pas être utilisées en période de forts vents du large.</S131:text>
         </S131:information>
       </S131:textContent>
-      <S131:theRxN xlink:href="#AA.CAHAL.NauticalInformation.14.8.01"/>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.01"/>
       <S131:theRxN xlink:href="#AA.CAHAL.Recommendations.14.8.01"/>
       <S131:theRxN xlink:href="#AA.CAHAL.Recommendations.14.8.02"/>
       <S131:theRxN xlink:href="#AA.CAHAL.Recommendations.14.8.03"/>
@@ -911,9 +955,12 @@
     
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.5">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>A</S131:name>
       </S131:featureName>
-      <S131:source>CA476009; Port Guide</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA476009; Port Guide</S131:source>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:language>eng</S131:language>
@@ -928,7 +975,7 @@
       <S131:theRxN xlink:href="#AA.CAHAL.Recommendations.14.8.02"/>
       <S131:theRxN xlink:href="#AA.CAHAL.Recommendations.14.8.03"/>
       <S131:theRxN xlink:href="#AA.CAHAL.Regulations.14.8.01"/>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.01"/>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.01"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.303"/>
       <S131:geometry>
         <S100:surfaceProperty>
@@ -945,7 +992,9 @@
       </S131:geometry>
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorageArea.6">
-      <S131:source>CA476009</S131:source>
+      <S131:sourceIndication>
+          <S131:source>CA476009</S131:source>
+      </S131:sourceIndication>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.307"/>
       <S131:geometry><S100:pointProperty><S100:Point gml:id="AA.CAHAL.AnchorAgeArea.6.P">
         <gml:pos>44.4900895 -63.5495364</gml:pos>
@@ -953,10 +1002,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.00">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>4</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -968,10 +1020,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.01">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>5</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -983,14 +1038,17 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.02">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>6</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
-          <S100:Point gml:id="AA.CAHAL.AnchorBerth.02.P"  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+          <S100:Point gml:id="AA.CAHAL.AnchorBerth.02.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
             <gml:pos>44.6576667 -63.5637778</gml:pos>
           </S100:Point>
         </S100:pointProperty>
@@ -998,10 +1056,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.03">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>3</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1013,10 +1074,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.04">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>2</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1028,10 +1092,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.05">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>1</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.305"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1044,10 +1111,13 @@
     
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.06">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>10</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1059,10 +1129,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.07">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>9</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1074,10 +1147,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.08">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>11</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1089,10 +1165,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.09">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>12</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1104,10 +1183,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.10">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>7</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1119,10 +1201,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.11">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>8</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1134,10 +1219,13 @@
     </S131:AnchorageArea>
     <S131:AnchorageArea gml:id="AA.CAHAL.AnchorBerth.12">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>13</S131:name>
       </S131:featureName>
-      <S131:source>CA576001</S131:source>
-      <S131:providesInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
+      <S131:sourceIndication>
+          <S131:source>CA576001</S131:source>
+      </S131:sourceIndication>
+      <S131:theInformation xlink:href="#AA.CAHAL.NauticalInformation.14.8.02"/>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -1150,7 +1238,8 @@
         
     <S131:Berth gml:id="AA.CAHAL.Berth.0">
       <!-- 329808 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.08"/>
       <S131:geometry>
@@ -1163,7 +1252,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.1">
       <!-- 329960 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.204"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.1"><gml:pos>44.6285523 -63.5229122</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1171,7 +1261,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.2">
       <!-- 329894 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.08"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.2"><gml:pos>44.6391625 -63.5420556</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1179,7 +1270,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.3">
       <!-- 329891 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.08"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.3"><gml:pos>44.6363653 -63.5376359</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1187,7 +1279,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.4">
       <!-- 329800 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.204"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.4"><gml:pos>44.6277331 -63.5229467</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1195,7 +1288,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.5">
       <!-- 329861 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.204"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.5"><gml:pos>44.6281144 -63.5234858</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1203,7 +1297,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.6">
       <!-- 329914 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.204"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.6"><gml:pos>44.6278538 -63.5219353</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1211,7 +1306,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.7">
       <!-- 329906 -->
-      <S131:featureName><S131:name>6</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>6</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.7"><gml:pos>44.6606577 -63.5568843</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1219,7 +1315,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.8">
       <!-- 329897 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.8"><gml:pos>44.6604027 -63.5582645</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1227,7 +1324,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.9">
       <!-- 329873 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.geom.9"><gml:pos>44.6610058 -63.5582773</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1235,7 +1333,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.10">
       <!-- 329923 -->
-      <S131:featureName><S131:name>7</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>7</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.10.P"><gml:pos>44.6597996 -63.5565527</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1243,7 +1342,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.11">
       <!-- 329939 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.11.P"><gml:pos>44.6615139 -63.5570059</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1251,7 +1351,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.12">
       <!-- 329954 -->
-      <S131:featureName><S131:name>8</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>8</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.12.P"><gml:pos>44.6593747 -63.5574016</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1259,7 +1360,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.13">
       <!-- 329921 -->
-      <S131:featureName><S131:name>9</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>9</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.13.P"><gml:pos>44.6588017 -63.5574156</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1267,7 +1369,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.14">
       <!-- 329883 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.14.P"><gml:pos>44.6552405 -63.5769073</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1275,7 +1378,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.15">
       <!-- 329862 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.15.P"><gml:pos>44.6548594 -63.5765539</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1283,7 +1387,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.16">
       <!-- 329806 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.16.P"><gml:pos>44.6571998 -63.5795448</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1291,7 +1396,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.17">
       <!-- 329805 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.17.P"><gml:pos>44.6607819 -63.584684</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1299,7 +1405,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.18">
       <!-- 329804 -->
-      <S131:featureName><S131:name>6</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>6</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.18.P"><gml:pos>44.6587433 -63.5821489</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1307,7 +1414,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.19">
       <!-- 329802 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.19.P"><gml:pos>44.654365 -63.5778368</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1315,7 +1423,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.20">
       <!-- 329796 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.20.P"><gml:pos>44.6556116 -63.5792759</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1323,7 +1432,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.21">
       <!-- 329846 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.21.P"><gml:pos>44.6590229 -63.5817853</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1331,7 +1441,8 @@
     
     <S131:Berth gml:id="AA.CAHAL.Berth.22">
       <!-- 329934 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.22.P"><gml:pos>44.6547342 -63.5782081</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1339,7 +1450,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.23">
       <!-- 329830 -->
-      <S131:featureName><S131:name>6</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>6</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.23.P"><gml:pos>44.6559232 -63.5798405</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1347,7 +1459,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.24">
       <!-- 329829 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.24.P"><gml:pos>44.6583092 -63.5806945</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1355,7 +1468,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.25">
       <!-- 329898 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.25.P"><gml:pos>44.6576412 -63.5815677</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1363,7 +1477,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.26">
       <!-- 329890 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.26.P"><gml:pos>44.6594268 -63.5825906</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1371,7 +1486,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.27">
       <!-- 329881 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.27.P"><gml:pos>44.6597923 -63.5827264</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1379,7 +1495,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.28">
       <!-- 329878 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.28.P"><gml:pos>44.6598087 -63.5838748</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1387,7 +1504,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.29">
       <!-- 329869 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.29.P"><gml:pos>44.6562147 -63.5776588</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1395,7 +1513,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.30">
       <!-- 329952 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.30.P"><gml:pos>44.6568827 -63.5791261</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1403,7 +1522,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.31">
       <!-- 329948 -->
-      <S131:featureName><S131:name>7</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>7</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.31.P"><gml:pos>44.6583805 -63.5825855</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1411,7 +1531,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.32">
       <!-- 329928 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.32.P"><gml:pos>44.6580433 -63.5810581</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1419,7 +1540,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.33">
       <!-- 329926 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.33.P"><gml:pos>44.656636 -63.5779495</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1427,7 +1549,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.34">
       <!--13972471 -->
-      <S131:featureName><S131:name>6</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>6</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.34.P"><gml:pos>44.6685094 -63.5973145</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1435,7 +1558,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.35">
       <!-- 13972491 -->
-      <S131:featureName><S131:name>9</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>9</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.06"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.35.P"><gml:pos>44.6720845 -63.6006112</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1443,7 +1567,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.36">
       <!-- 13972472 -->
-      <S131:featureName><S131:name>7</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>7</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.36.P"><gml:pos>44.6706153 -63.599135</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1451,7 +1576,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.37">
       <!-- 705850 -->
-      <S131:featureName><S131:name>4</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>4</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.203"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.37.P"><gml:pos>44.6685057 -63.5876852</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1459,7 +1585,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.38">
       <!-- 705849 -->
-      <S131:featureName><S131:name>5</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>5</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.203"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.38.P"><gml:pos>44.6685395 -63.5875399</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1467,7 +1594,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.39">
       <!-- 705848 -->
-      <S131:featureName><S131:name>3</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>3</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.203"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.39.P"><gml:pos>44.6678367 -63.5868554</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1475,7 +1603,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.40">
       <!-- 13972486 -->
-      <S131:featureName><S131:name>9C</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>9C</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.06"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.40.P"><gml:pos>44.674382 -63.6072753</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1483,7 +1612,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.41">
       <!-- 13972493 -->
-      <S131:featureName><S131:name>9B</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>9B</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.06"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.41.P"><gml:pos>44.6741764 -63.6052455</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1491,7 +1621,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.42">
       <!-- 13972478 -->
-      <S131:featureName><S131:name>1</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>1</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.42.P"><gml:pos>44.6626687 -63.5575598</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1499,7 +1630,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.43">
       <!-- 13972479 -->
-      <S131:featureName><S131:name>2</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>2</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.17"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.43.P"><gml:pos>44.6622136 -63.5572601</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1507,7 +1639,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.44">
       <!-- 13972492 -->
-      <S131:featureName><S131:name>9A</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>9A</S131:name></S131:featureName>
       <S131:uNLocationCode><!-- unavailable --></S131:uNLocationCode>
       <S131:componentOf xlink:href="#AA.CAHAL.Terminal.06"/>
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.44.P"><gml:pos>44.6733813 -63.6028256</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
@@ -1515,7 +1648,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.45">
       <!-- 285858 -->
-      <S131:featureName><S131:name>25</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>25</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1538,7 +1672,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.46">
       <!-- 285848 -->
-      <S131:featureName><S131:name>22</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>22</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1557,7 +1692,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.47">
       <!-- 285823 -->
-      <S131:featureName><S131:name>34</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>34</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1584,7 +1720,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.48">
       <!-- 285890 -->
-      <S131:featureName><S131:name>30</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>30</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1607,7 +1744,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.49">
       <!-- 285855 -->
-      <S131:featureName><S131:name>33</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>33</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1630,7 +1768,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.50">
       <!-- 285885 -->
-      <S131:featureName><S131:name>23</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>23</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1649,7 +1788,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.51">
       <!-- 285828 -->
-      <S131:featureName><S131:name>41</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>41</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1668,7 +1808,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.52">
       <!-- 285887 -->
-      <S131:featureName><S131:name>42</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>42</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1687,7 +1828,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.53">
       <!-- 285892 -->
-      <S131:featureName><S131:name>39</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>39</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1706,7 +1848,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.54">
       <!-- 285893 -->
-      <S131:featureName><S131:name>37</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>37</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1725,7 +1868,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.55">
       <!-- 285876 -->
-      <S131:featureName><S131:name>36</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>36</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1744,7 +1888,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.56">
       <!-- 285896 -->
-      <S131:featureName><S131:name>28</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>28</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1767,7 +1912,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.57">
       <!-- 285889 -->
-      <S131:featureName><S131:name>31</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>31</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1790,7 +1936,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.58">
       <!-- 285863 -->
-      <S131:featureName><S131:name>21</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>21</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1809,7 +1956,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.59">
       <!-- 285886 -->
-      <S131:featureName><S131:name>24</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>24</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1832,7 +1980,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.60">
       <!-- 285899 -->
-      <S131:featureName><S131:name>20</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>20</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1851,7 +2000,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.61">
       <!-- 285862 -->
-      <S131:featureName><S131:name>26</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>26</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1874,7 +2024,8 @@
 
     <S131:Berth gml:id="AA.CAHAL.Berth.62">
       <!-- 285878 -->
-      <S131:featureName><S131:name>27</S131:name></S131:featureName>
+      <S131:featureName><S131:language>eng</S131:language>
+    <S131:name>27</S131:name></S131:featureName>
       <S131:textContent>
         <S131:information>
           <S131:headline>Avg. depth</S131:headline>
@@ -1895,7 +2046,9 @@
       <S131:geometry><S100:pointProperty><S100:Point srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.Berth.62.P"><gml:pos>44.6346384 -63.5643096</gml:pos></S100:Point></S100:pointProperty></S131:geometry>
     </S131:Berth>
       <S131:DryDock gml:id="AA.CAHAL.DryDock.0">
-          <S131:source>CA576003</S131:source>
+          <S131:sourceIndication>
+              <S131:source>CA576003</S131:source>
+          </S131:sourceIndication>
           <S131:infrastructureLocation xlink:href="#AA.CAHAL.HarbourAreaSection.0"/>
           <S131:geometry>
               <S100:surfaceProperty>
@@ -1908,7 +2061,9 @@
           </S131:geometry>
       </S131:DryDock>
         <S131:DryDock gml:id="AA.CAHAL.DryDock.1">
-            <S131:source>CA576003</S131:source>
+            <S131:sourceIndication>
+                <S131:source>CA576003</S131:source>
+            </S131:sourceIndication>
             <S131:infrastructureLocation xlink:href="#AA.CAHAL.HarbourAreaSection.109"/>
             <S131:geometry>
                 <S100:surfaceProperty>
@@ -1942,8 +2097,10 @@
                     <S131:language>fra</S131:language>
                     <S131:text>Les zones maritimes du port d'Halifax sont tirées des ENC. Pour plus reneignement, consulter vue générale "HarbourAreaAdministrative".</S131:text>
                 </S131:information>
-                <S131:source>CA 576001; CA576002; CA576003; CA476009</S131:source>
-                <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                <S131:sourceIndication>
+                    <S131:source>CA 576001; CA576002; CA576003; CA476009</S131:source>
+                    <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                </S131:sourceIndication>
             </S131:textContent>
             <S131:theRxN xlink:href="#AA.CAHAL.Regulations.00"/>
             <S131:theRxN xlink:href="#AA.CAHAL.Regulations.11.3.01"/>
@@ -2024,20 +2181,24 @@
                     <S131:language>fra</S131:language>
                     <S131:text>La zone générale du port d'Halifax comprend les zone maritime du port ainsi que les emplacements pertinents adjacents sur terre et sur mer. Elle ne sépare pas les îles et autres zones non navigables ou intertidales de la zone maritime.</S131:text>
                 </S131:information>
-                <S131:source>CA 576001; CA576002; CA576003; CA476009; Google earth, OpenStreetMap; Compiler</S131:source>
-                <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                <S131:sourceIndication>
+                    <S131:source>CA 576001; CA576002; CA576003; CA476009; Google earth, OpenStreetMap; Compiler</S131:source>
+                    <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                </S131:sourceIndication>
             </S131:textContent>
             <S131:textContent>
                 <S131:onlineResource>
-                    <S131:onlineResourceLinkageURL>http://www.portofhalifax.ca/</S131:onlineResourceLinkageURL>
+                    <S131:linkage>http://www.portofhalifax.ca/</S131:linkage>
                     <S131:protocol>http</S131:protocol>
                     <S131:nameOfResource>Port Website</S131:nameOfResource>
                     <S131:onlineResourceDescription>Port, facility, and service information; schedules; vessel information; receive and submit information about cargo, cruise and marine-related businesses.</S131:onlineResourceDescription>
                     <S131:onlineFunction code="10">Browsing</S131:onlineFunction>
                 </S131:onlineResource>
-                <S131:source>HPA Port Information Guide</S131:source>
-                <S131:sourceType code="2">Official Publication</S131:sourceType>
-                <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                <S131:sourceIndication>
+                    <S131:source>HPA Port Information Guide</S131:source>
+                    <S131:sourceType code="2">Official Publication</S131:sourceType>
+                    <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                </S131:sourceIndication>
             </S131:textContent>
           <S131:textContent>
             <S131:information>
@@ -2056,9 +2217,11 @@
                       <S131:information>
                           <S131:text>The Port of Halifax is located on Canada’s east coast in the Province of Nova Scotia and is a short distance from  the Great Circle route. (to/from?) The Halifax Port authority (HPA) manages over 15,000 hectares of water and approximately 1000 hectares of land. The HPA’s navigation jurisdiction extends from Bakers Point, North East of Eastern Passage through McNabs Island to a point SW of Purcell’s Cove, including the Northwest Arm.</S131:text>
                       </S131:information>
-                      <S131:source>HPA Port Information Guide</S131:source>
-                      <S131:sourceType code="2">Official Publication</S131:sourceType>
-                      <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      <S131:sourceIndication>
+                          <S131:source>HPA Port Information Guide</S131:source>
+                          <S131:sourceType code="2">Official Publication</S131:sourceType>
+                          <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      </S131:sourceIndication>
                   </S131:textContent>
               </S131:generalPortDescription>
               <S131:facilitiesLayoutDescription>
@@ -2074,9 +2237,11 @@
                       <S131:information>
                           <S131:text>The navigation jurisdiction of the Halifax Port Authority includes all the waters lying northwest of the harbour limit line. Seaward of the harbour limit line, the Canadian Coast Guard and Transport Canada share jurisdiction.</S131:text>
                       </S131:information>
-                      <S131:source>HPA Port Information Guide; ENC CA476009</S131:source>
-                      <S131:sourceType code="2">Official Publication</S131:sourceType>
-                      <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      <S131:sourceIndication>
+                          <S131:source>HPA Port Information Guide; ENC CA476009</S131:source>
+                          <S131:sourceType code="2">Official Publication</S131:sourceType>
+                          <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      </S131:sourceIndication>
                   </S131:textContent>
               </S131:limitsDescription>
               <S131:constructionInformation>
@@ -2090,14 +2255,16 @@
                       <S131:information>
                           <S131:text>The Port of Halifax is diversified in the cargo capabilities and offers a wide variety of services. HPA operates across six business sectors; containers, cruise, bulk, breakbulk, automobiles, and grain.</S131:text>
                       </S131:information>
-                      <S131:source>HPA Port Information Guide</S131:source>
-                      <S131:sourceType code="2">Official Publication</S131:sourceType>
-                      <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      <S131:sourceIndication>
+                          <S131:source>HPA Port Information Guide</S131:source>
+                          <S131:sourceType code="2">Official Publication</S131:sourceType>
+                          <S131:reportedDate><S100:gYearMonth>2022-04</S100:gYearMonth></S131:reportedDate>
+                      </S131:sourceIndication>
                   </S131:textContent>
               </S131:cargoServicesDescription>
               <S131:weatherResource>
                   <S131:onlineResource>
-                      <S131:onlineResourceLinkageURL>https://weather.gc.ca/marine/region_e.html?mapID=15</S131:onlineResourceLinkageURL>
+                      <S131:linkage>https://weather.gc.ca/marine/region_e.html?mapID=15</S131:linkage>
                       <S131:protocol>https</S131:protocol>
                       <S131:nameOfResource>Marine Weather - Atlantic/Maritimes</S131:nameOfResource>
                       <S131:onlineFunction code="10">Browsing</S131:onlineFunction>
@@ -2106,7 +2273,7 @@
               </S131:weatherResource>
               <S131:weatherResource>
                   <S131:onlineResource>
-                      <S131:onlineResourceLinkageURL>http://tides.gc.ca/eng/station?sid=490</S131:onlineResourceLinkageURL>
+                      <S131:linkage>http://tides.gc.ca/eng/station?sid=490</S131:linkage>
                       <S131:protocol>https</S131:protocol>
                       <S131:nameOfResource>Halifax Tide Information</S131:nameOfResource>
                       <S131:onlineFunction code="10">Browsing</S131:onlineFunction>
@@ -2115,7 +2282,7 @@
               </S131:weatherResource>
               <S131:weatherResource>
                   <S131:onlineResource>
-                      <S131:onlineResourceLinkageURL>http://www.smartatlantic.ca</S131:onlineResourceLinkageURL>
+                      <S131:linkage>http://www.smartatlantic.ca</S131:linkage>
                       <S131:protocol>https</S131:protocol>
                       <S131:nameOfResource>Smartbuoy</S131:nameOfResource>
                       <S131:onlineFunction code="7">Browse Graphic</S131:onlineFunction>
@@ -2139,7 +2306,7 @@
           <S131:layoutUnit xlink:href="#AA.CAHAL.HarbourAreaSection.304"/>
           <S131:geometry>
               <S100:surfaceProperty>
-                  <S100:Surface srsName="http://www.opengis.net/def/crs/EPSG/0/4326"  gml:id="AA.CAHAL.HarbourAreaAdministrative.1.S">
+                  <S100:Surface srsName="http://www.opengis.net/def/crs/EPSG/0/4326" gml:id="AA.CAHAL.HarbourAreaAdministrative.1.S">
                       <gml:patches>
                           <gml:PolygonPatch>
                               <gml:exterior>
@@ -2165,6 +2332,7 @@
         
   <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.0">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Irving Shipbuilding</S131:name>
       </S131:featureName>
       <S131:categoryOfHarbourFacility code="9">Shipyard</S131:categoryOfHarbourFacility>
@@ -2187,6 +2355,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.100">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Eastern Passage</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2207,6 +2376,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.101">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Bedford Basin</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2301,6 +2471,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.102">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Prior to MacKay Bridge</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2358,6 +2529,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.103">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Dartmouth Portion</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2401,6 +2573,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.104">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Ocean Terminals</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2436,6 +2609,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.105">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>South End</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2497,6 +2671,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.106">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Woodside</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2530,6 +2705,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.107">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Dartmouth shoreline</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2573,6 +2749,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.108">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>COVE Marine Terminal and CCG</S131:name>
       </S131:featureName>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2601,6 +2778,7 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.109">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Halifax Harbour Navy Section</S131:name>
       </S131:featureName>
       <S131:constitute xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
@@ -2657,6 +2835,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.110">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Richmond Terminals</S131:name>
       </S131:featureName>
       <S131:constitute xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
@@ -2676,6 +2855,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.200">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>CFB/BFC Halifax Navy Enclosure</S131:name>
       </S131:featureName>
       <S131:textContent>
@@ -2707,7 +2887,7 @@
         </S100:surfaceProperty>
       </S131:geometry>
     </S131:HarbourAreaSection>
-    <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.201" >
+    <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.201">
       <S131:textContent>
         <S131:information>
           <S131:language>eng</S131:language>
@@ -2739,6 +2919,7 @@
     
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.203">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Naval Dockyard Annex Controlled Access Zone</S131:name>
       </S131:featureName>
       <S131:textContent>
@@ -2891,6 +3072,7 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.303">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Off Chebucto Head</S131:name>
       </S131:featureName>
       <S131:textContent>
@@ -2917,6 +3099,7 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.304">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Pilot Boarding</S131:name>
       </S131:featureName>
       <S131:textContent>
@@ -2947,10 +3130,13 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.305">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Inner Harbour Anchorages 1 - 6</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide Part XIV</S131:source>
-      <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide Part XIV</S131:source>
+          <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Anchorages cannot be reserved. If an anchorage is deemed unavailable, the HPA will advise upon request. Vessels should be anchored in the first available anchorage closest to the beginning of this list: Anchorage Number 6 - 5 - 4 - 2 - 3 - 1</S131:text>
@@ -2987,9 +3173,12 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.306">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Northwest Arm</S131:name>
       </S131:featureName>
-      <S131:source>Original</S131:source>
+      <S131:sourceIndication>
+          <S131:source>Original</S131:source>
+      </S131:sourceIndication>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.AnchorageArea.0"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.AnchorageArea.1"/>
@@ -3016,9 +3205,12 @@
     </S131:HarbourAreaSection>
     <S131:HarbourAreaSection gml:id="AA.CAHAL.HarbourAreaSection.307">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Ketch Harbour</S131:name>
       </S131:featureName>
-      <S131:source>Original</S131:source>
+      <S131:sourceIndication>
+          <S131:source>Original</S131:source>
+      </S131:sourceIndication>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaAdministrative.1"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.AnchorageArea.6"/>
       <S131:geometry>
@@ -3052,14 +3244,15 @@
     
 
 
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.01">
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.01">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>3</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.01.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3067,15 +3260,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.02">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.02">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>5</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.02.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3083,15 +3277,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.03">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.03">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Navy</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.03.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3099,15 +3294,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.04">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.04">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Navy</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.04.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3115,15 +3311,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.05">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.05">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>1</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.05.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3131,15 +3328,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.06">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.06">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>6</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.06.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3147,15 +3345,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.07">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.07">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>4</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.07.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3163,15 +3362,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.08">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.08">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Navy</S131:name>
       </S131:featureName>
-      <S131:source>576001</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576001</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.08.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3179,15 +3379,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.09">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.09">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>NAVY 3</S131:name>
       </S131:featureName>
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.09.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3195,12 +3396,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.10">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.10">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.10.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3208,12 +3409,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.11">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.11">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.11.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3221,12 +3422,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.12">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.12">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.12.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3234,12 +3435,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.13">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.13">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.13.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3247,15 +3448,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.14">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.14">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Navy 2</S131:name>
       </S131:featureName>
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.14.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3263,15 +3465,16 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.15">
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.15">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Navy 1</S131:name>
       </S131:featureName>
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.15.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3279,12 +3482,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.16">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.16">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.16.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3292,12 +3495,12 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.17">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfMooringWarpingFacility code="7">Mooring Buoy</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+    </S131:MooringBuoy>
+    <S131:MooringBuoy gml:id="AA.CAHAL.MooringWarpingFacility.17">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.17.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3305,21 +3508,24 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
+    </S131:MooringBuoy>
     
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.18">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.18">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.18.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3327,20 +3533,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.19">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.19">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.19.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3348,20 +3557,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.20">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.20">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.20.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3369,20 +3581,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.21">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.21">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.21.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3390,20 +3605,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.22">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.22">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.22.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3411,20 +3629,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.23">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.23">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.23.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3432,20 +3653,23 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
-    <S131:MooringWarpingFacility gml:id="AA.CAHAL.MooringWarpingFacility.24">
-      <S131:source>576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+    </S131:Dolphin>
+    <S131:Dolphin gml:id="AA.CAHAL.MooringWarpingFacility.24">
+      <S131:sourceIndication>
+          <S131:source>576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:headline>Relationship to ENC</S131:headline>
           <S131:text>Centroid of ENC area feature</S131:text>
         </S131:information>
-        <S131:source>576003</S131:source>
-        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        <S131:sourceIndication>
+            <S131:source>576003</S131:source>
+            <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+        </S131:sourceIndication>
       </S131:textContent>
-      <S131:categoryOfMooringWarpingFacility code="1">Dolphin</S131:categoryOfMooringWarpingFacility>
-      <S131:iDCode></S131:iDCode>
+      <S131:categoryOfDolphin code="1">Mooring Dolphin</S131:categoryOfDolphin>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.MooringWarpingFacility.24.S.C" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3453,7 +3677,7 @@
           </S100:Point>
         </S100:pointProperty>
       </S131:geometry>
-    </S131:MooringWarpingFacility>
+    </S131:Dolphin>
         <S131:OuterLimit gml:id="AA.CAHAL.OuterLimit.0">
             <S131:featureName>
                 <S131:language>eng</S131:language>
@@ -3473,8 +3697,10 @@
                         <S131:language>fra</S131:language>
                         <S131:text>L'extrémité est de l'entrée se trouve près de la BFC Shearwater, une base aérienne dotée d'une tour de contrôle pour l'aviation militaire.</S131:text>
                     </S131:information>
-                    <S131:source>CA576003</S131:source>
-                    <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                    <S131:sourceIndication>
+                        <S131:source>CA576003</S131:source>
+                        <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+                    </S131:sourceIndication>
                 </S131:textContent>
             </S131:landmarkDescription>
             <S131:entranceReference xlink:href="#AA.CAHAL.Entrance.0"/>
@@ -3490,13 +3716,16 @@
         
       <S131:PilotBoardingPlace gml:id="AA.CAHAL.PilotBoardingPlace.00">
         <S131:featureName>
+          <S131:language>eng</S131:language>
           <S131:name>Halifax Pilot Station</S131:name>
         </S131:featureName>
-        <S131:source>CA476009; HPA Port Guide</S131:source>
-        <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaArea.303.S"/>
+        <S131:sourceIndication>
+            <S131:source>CA476009; HPA Port Guide</S131:source>
+        </S131:sourceIndication>
+        <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.303"/>
         <S131:geometry>
           <S100:pointProperty>
-            <S100:Point gml:id="AA.CAHAL.PilotBoardingPlace.00.P"  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <S100:Point gml:id="AA.CAHAL.PilotBoardingPlace.00.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>44.5066667 -63.4916667</gml:pos>
             </S100:Point>
           </S100:pointProperty>
@@ -3504,9 +3733,12 @@
       </S131:PilotBoardingPlace>
       <S131:PilotBoardingPlace gml:id="AA.CAHAL.PilotBoardingPlace.01">
         <S131:featureName>
+          <S131:language>eng</S131:language>
           <S131:name>Outer Pilot Station</S131:name>
         </S131:featureName>
-        <S131:source>CA476009; HPA Port Guide</S131:source>
+        <S131:sourceIndication>
+            <S131:source>CA476009; HPA Port Guide</S131:source>
+        </S131:sourceIndication>
         <S131:textContent>
           <S131:information>
             <S131:language>eng</S131:language>
@@ -3527,10 +3759,10 @@
             <S131:categoryOfRelationship code="5">Required</S131:categoryOfRelationship>
           </S131:PermissionType>
         </S131:permission>
-        <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaArea.303.S"/>
+        <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.303"/>
         <S131:geometry>
           <S100:pointProperty>
-            <S100:Point gml:id="AA.CAHAL.PilotBoardingPlace.01.P"  srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
+            <S100:Point gml:id="AA.CAHAL.PilotBoardingPlace.01.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
               <gml:pos>44.4833333 -63.4680556</gml:pos>
             </S100:Point>
           </S100:pointProperty>
@@ -3538,11 +3770,14 @@
       </S131:PilotBoardingPlace>
     <S131:Terminal gml:id="AA.CAHAL.Terminal.00">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Woodside Ferry Terminal</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfHarbourFacility code="3">Ferry Terminal</S131:categoryOfHarbourFacility>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
+      <S131:categoryOfTerminal code="3">Ferry Terminal</S131:categoryOfTerminal>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.106"/>
       <S131:geometry>
         <S100:surfaceProperty>
@@ -3562,11 +3797,14 @@
     </S131:Terminal>
     <S131:Terminal gml:id="AA.CAHAL.Terminal.01">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Alderney Ferry Terminal</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
-      <S131:categoryOfHarbourFacility code="3">Ferry Terminal</S131:categoryOfHarbourFacility>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
+      <S131:categoryOfTerminal code="3">Ferry Terminal</S131:categoryOfTerminal>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.107"/>
       <S131:geometry>
         <S100:surfaceProperty>
@@ -3586,11 +3824,14 @@
     </S131:Terminal>
     <S131:Terminal gml:id="AA.CAHAL.Terminal.02">
       <S131:featureName>
+        <S131:language>eng</S131:language>
         <S131:name>Metro Transit Ferry Terminal</S131:name>
       </S131:featureName>
-      <S131:source>OpenStreetMap</S131:source>
-      <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
-      <S131:categoryOfHarbourFacility code="3">Ferry Terminal</S131:categoryOfHarbourFacility>
+      <S131:sourceIndication>
+          <S131:source>OpenStreetMap</S131:source>
+          <S131:sourceType code="9">Industry Publications and Reports</S131:sourceType>
+      </S131:sourceIndication>
+      <S131:categoryOfTerminal code="3">Ferry Terminal</S131:categoryOfTerminal>
       <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
       <S131:geometry>
         <S100:pointProperty>
@@ -3609,8 +3850,10 @@
         <S131:language>fra</S131:language>
         <S131:name>Groupe électrogéne thermique</S131:name>
       </S131:featureName>
-      <S131:source>CA576003</S131:source>
-      <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      <S131:sourceIndication>
+          <S131:source>CA576003</S131:source>
+          <S131:sourceType code="12">Products Issued by HO Services</S131:sourceType>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:text>Onshore location of plant</S131:text>
@@ -3639,9 +3882,11 @@
         <S131:language>eng</S131:language>
         <S131:name>CN Autoport Ltd</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table01</S131:fileLocator>
@@ -3651,7 +3896,7 @@
           <S131:headline>CN Autoport Ltd</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.100"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.100"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.04.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3671,9 +3916,11 @@
         <S131:pictureCaption>Fairview Cove Container Terminal (PSA Halifax Fairview Cove)</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2022-04-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2022-04-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table02</S131:fileLocator>
@@ -3698,7 +3945,7 @@
       <S131:theRxN xlink:href="#AA.CAHAL.Restrictions.01"/>
       <S131:controlAuthority xlink:href="#AA.CAHAL.Authority.01"/>
       <S131:sMDGTerminalCode>FCOVE</S131:sMDGTerminalCode>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.101"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.05.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3718,9 +3965,11 @@
         <S131:pictureCaption>Richmond Terminals</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table03</S131:fileLocator>
@@ -3730,7 +3979,7 @@
           <S131:headline>Richmond Terminals</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.35"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.40"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.41"/>
@@ -3749,9 +3998,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Irving Oil Halifax Harbour Terminal</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table04</S131:fileLocator>
@@ -3761,7 +4012,7 @@
           <S131:headline>Irving Oil Halifax Harbour Terminal</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.103"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.103"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.07.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3776,9 +4027,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Imperial Oil Dartmouth Terminal (IOL #3)</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-10-29</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-10-29</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table05</S131:fileLocator>
@@ -3788,7 +4041,7 @@
           <S131:headline>Imperial Oil Dartmouth Terminal (IOL #3)</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.103"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.103"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.0"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.2"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.3"/>
@@ -3811,9 +4064,11 @@
         <S131:pictureCaption>Halifax Grain Elevator</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table06</S131:fileLocator>
@@ -3823,7 +4078,7 @@
           <S131:headline>Halifax Grain Elevator Ltd. (Piers 26/28)</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.104"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.104"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.09.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3843,9 +4098,11 @@
         <S131:pictureCaption>Halifax Seaport</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table07</S131:fileLocator>
@@ -3855,7 +4112,7 @@
           <S131:headline>Seaport Cruise Vessel Facility</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.105"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.105"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.46"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.50"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.58"/>
@@ -3879,9 +4136,11 @@
         <S131:pictureCaption>Ocean Terminals</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table08</S131:fileLocator>
@@ -3896,7 +4155,7 @@
           <S131:text>Storage Capacity: 18,648 m2 / 200,725 ft^2 of covered area; Ro/Ro ramps, on-dock rail and end ramp for rail loading; Inbound and outbound conveyance berths for Halifax Grain Elevator • Food grade products such as peas, beans and lentils can now be containerized at the Halifax Grain Elevator.; Terminal equipment and services supplied by stevedoring contractors</S131:text>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.104"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.104"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.45"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.47"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.48"/>
@@ -3920,9 +4179,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Ocean Terminals (Pier 24)</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table09</S131:fileLocator>
@@ -3932,7 +4193,7 @@
           <S131:headline>Ocean Terminals (Pier 24)</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.100"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.100"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.12.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -3952,9 +4213,11 @@
         <S131:pictureCaption>South End Container Terminal (PSA Halifax Atlantic Hub)</S131:pictureCaption>
         <S131:pictureInformation>HPA Port Information Guide</S131:pictureInformation>
       </S131:graphic>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-11-02</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-11-02</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table10</S131:fileLocator>
@@ -3979,7 +4242,7 @@
       </S131:textContent>
       <S131:controlAuthority xlink:href="#AA.CAHAL.Authority.01"/>
       <S131:sMDGTerminalCode>HAFTXT</S131:sMDGTerminalCode>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.105"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.105"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.50"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.52"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.53"/>
@@ -3999,9 +4262,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Gold Bond Canada Limited</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-10-30</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-10-30</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table11</S131:fileLocator>
@@ -4011,7 +4276,7 @@
           <S131:headline>Gold Bond Canada Limited</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.102"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.14.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -4026,9 +4291,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Woodside Atlantic Wharf</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2020-11-03</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table12</S131:fileLocator>
@@ -4038,7 +4305,7 @@
           <S131:headline>Woodside Atlantic Wharf</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.106"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.106"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.15.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -4053,9 +4320,11 @@
         <S131:language>eng</S131:language>
         <S131:name>Nova Scotia Power, Tuft’s Cove Generating Station</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2018-05-01</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table13</S131:fileLocator>
@@ -4065,7 +4334,7 @@
           <S131:headline>Nova Scotia Power, Tuft’s Cove Generating Station</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.107"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.107"/>
       <S131:geometry>
         <S100:pointProperty>
           <S100:Point gml:id="AA.CAHAL.Terminal.16.P" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">
@@ -4080,9 +4349,11 @@
         <S131:language>eng</S131:language>
         <S131:name>COVE Marine Terminal</S131:name>
       </S131:featureName>
-      <S131:source>HPA Port Information Guide</S131:source>
-      <S131:sourceType code="2">Official Publication</S131:sourceType>
-      <S131:reportedDate><S100:date>2022-01-24</S100:date></S131:reportedDate>
+      <S131:sourceIndication>
+          <S131:source>HPA Port Information Guide</S131:source>
+          <S131:sourceType code="2">Official Publication</S131:sourceType>
+          <S131:reportedDate><S100:date>2022-01-24</S100:date></S131:reportedDate>
+      </S131:sourceIndication>
       <S131:textContent>
         <S131:information>
           <S131:fileLocator>table14</S131:fileLocator>
@@ -4092,7 +4363,7 @@
           <S131:headline>COVE Marine Terminal</S131:headline>
         </S131:information>
       </S131:textContent>
-      <S131:componentOf  xlink:href="#AA.CAHAL.HarbourAreaSection.108"/>
+      <S131:componentOf xlink:href="#AA.CAHAL.HarbourAreaSection.108"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.7"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.8"/>
       <S131:layoutUnit xlink:href="#AA.CAHAL.Berth.9"/>
