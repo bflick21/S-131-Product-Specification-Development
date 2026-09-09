@@ -540,6 +540,14 @@
           <language>eng</language>
         </description>
       </viewingGroup>
+      <viewingGroup id="36050">
+        <description>
+           <name>Contiguous zone (CONZNE), exclusive economic zone (EXEZNE), national territorial area (NATARE), territorial sea (TESARE), territorial sea baseline (STSLNE), administration area (ADMARE)</name>
+           <description>Other: N - Special areas</description>
+           <language>eng</language>
+        </description>
+     </viewingGroup>
+
       <!-- P, Q, R, S - BUOYS & BEACONS, LIGHTS, FOG SIGNALS, RADAR -->
       <!-- T, U - SERVICES & SMALL CRAFT FACILITIES -->
       <viewingGroup id="38000">

@@ -94,7 +94,7 @@ end
 --
 
 function ProcessNauticalInformation(feature, featurePortrayal, contextParameters, viewingGroup)
-	local nauticalInformation = feature:GetInformationAssociation('AdditionalInformation', 'providesInformation', 'NauticalInformation')
+	local nauticalInformation = feature:GetInformationAssociation('AdditionalInformation', 'theInformation', 'NauticalInformation')
 
 	if nauticalInformation then
 		-- Clear any existing transforms and geometries
